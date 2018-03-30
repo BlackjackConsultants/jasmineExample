@@ -17,7 +17,15 @@ npm install -g @angular/cli
 
 ## Second: Once pre-requisites are installed then:
 1. clone this project by opening command prompt.
- 
+2. cd to the folder where you want to place the project. for example :
+```
+cd c:\temp
+```
+3. clone the example from git
+```
+git clone <URL>
+```
+4. 
 ## Additional links
 * [unit testing controllers](https://nathanleclaire.com/blog/2013/12/13/how-to-unit-test-controllers-in-angularjs-without-setting-your-hair-on-fire/)
 * [using $http service](http://www.bradoncode.com/blog/2015/06/26/unit-testing-http-ngmock-fundamentals/)
