@@ -105,7 +105,6 @@
     <Content Include="LICENSE" />
     <Content Include="package-lock.json" />
     <Content Include="package.json" />
-    <Content Include="README.md" />
     <Content Include="app\bower_components\angular-loader\.bower.json" />
     <Content Include="app\bower_components\angular-loader\angular-loader.min.js.map" />
     <Content Include="app\bower_components\angular-loader\bower.json" />

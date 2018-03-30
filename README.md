@@ -1,39 +1,12 @@
 # jasmineExample
-## Example of $httpBackend
-...
-'use strict';
+This is an example project for working with jasmine, ngMock, nodejs and karma.
 
-describe('myApp.BackendExampleView module', function () {
-    var $scope;
-    var $httpBackend;
-    var contact;
-    var BackendExampleViewCtrl;
+##To run it on your machine do the following:
 
-    contact = {
-        firstName: 'jorge',
-        lastName: 'perez'
-    }
+##Install pre-requisites:
+this project uses node.js and karma to run tests.
 
-    beforeEach(module('myApp.BackendExampleView'));
+##Once pre-requisites are installed then:
 
-    beforeEach(angular.mock.inject(function ($controller, $injector) {
-        BackendExampleViewCtrl = $controller('BackendExampleViewCtrl', {
-            $scope: $scope
-        });
-        $httpBackend = $injector.get('$httpBackend');
-        $httpBackend.when('GET', 'Contact/REST/contact/-1').respond(contact);
-    }));
-
-    afterEach(function() {
-        $httpBackend.verifyNoOutstandingExpectation();
-        $httpBackend.verifyNoOutstandingRequest();
-    });
-
-    it('should ....', function() {
-        //spec body
-        $httpBackend.flush();
-        expect(contact).toBeDefined();
-
-    });
-});
-...
+1. clone this project by opening command prompt.
+2. 
