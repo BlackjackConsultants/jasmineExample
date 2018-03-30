@@ -16,6 +16,7 @@ npm install -g @angular/cli
 ```
 4. install **[git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)**
 
+> There are also a few ways to install Git on Windows. The most official build is available for download on the Git website. Just go to http://git-scm.com/download/win and the download will start automatically. Note that this is a project called Git for Windows, which is separate from Git itself; for more information on it, go to https://git-for-windows.github.io/.
 
 ## Second: Once pre-requisites are installed then:
 1. clone this project by opening command prompt.
