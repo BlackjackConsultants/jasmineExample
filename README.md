@@ -11,4 +11,4 @@ this project uses node.js and karma to run tests.
 ## Once pre-requisites are installed then:
 
 1. clone this project by opening command prompt.
-2. 
+ 
