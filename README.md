@@ -1,5 +1,5 @@
 # Running jasmine tests on angularjs application.
-This is an angularjs application that runs each example on each view.  The application is ran from a visual studio solution.  The project uses jasmine, ngMock to execute create tests and then to run them it uses nodejs and karma. 
+This is an angularjs application that runs each example on an angularjs view.  The application is encapsulated in a visual studio solution for ease of use.  The project uses jasmine, ngMock to create the unit tests and then to run them it uses nodejs and karma. 
 
 ## To run it on your machine do the following:
 
