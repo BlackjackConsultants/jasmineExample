@@ -1,5 +1,5 @@
 # jasmineExample
-This is an example project for working with jasmine, ngMock, nodejs and karma.
+This is an example project for working with jasmine, ngMock, nodejs and karma for running the tests. 
 
 ## To run it on your machine do the following:
 
