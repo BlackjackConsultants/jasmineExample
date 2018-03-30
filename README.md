@@ -12,3 +12,8 @@ this project uses node.js and karma to run tests.
 
 1. clone this project by opening command prompt.
  
+
+
+## Cool links
+ 
+ [unit testing controllers](https://nathanleclaire.com/blog/2013/12/13/how-to-unit-test-controllers-in-angularjs-without-setting-your-hair-on-fire/)
