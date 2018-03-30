@@ -23,9 +23,12 @@ cd c:\temp
 ```
 3. clone the example from git
 ```
-git clone <URL>
+git clone https://github.com/jorgeperez99/jasmineExample.git
 ```
-4. 
+4. Navigate to the directory that was created
+```
+cd <directory name>
+```
 ## Additional links
 * [unit testing controllers](https://nathanleclaire.com/blog/2013/12/13/how-to-unit-test-controllers-in-angularjs-without-setting-your-hair-on-fire/)
 * [using $http service](http://www.bradoncode.com/blog/2015/06/26/unit-testing-http-ngmock-fundamentals/)
