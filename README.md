@@ -4,7 +4,7 @@ This is an angularjs application that runs each example on an angularjs view.  T
 ## To run it on your machine do the following:
 
 ## First: Install pre-requisites:
-this project uses node.js and karma to run tests.
+Install node.js and karma to run tests.  You only do this once.
 1. install node.js as cited [here](http://blog.teamtreehouse.com/install-node-js-npm-windows)
 2. install karma
 ```
