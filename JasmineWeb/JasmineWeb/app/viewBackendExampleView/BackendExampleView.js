@@ -13,9 +13,8 @@ angular.module('myApp.BackendExampleView', ['ngRoute'])
     console.debug('BackendExampleViewCtrl code executed.');
     $http.get('Contact/REST/contact/-1').then(function (response) {
         //authToken = response.headers('A-Token');
-        $scope.user = response.data;
+        $scope.user = response;
     }).catch(function () {
         $scope.status = 'Failed...';
     });
-
 }]);

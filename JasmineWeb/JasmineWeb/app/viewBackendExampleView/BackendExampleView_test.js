@@ -29,10 +29,11 @@ describe('myApp.BackendExampleView module', function () {
         $httpBackend.verifyNoOutstandingRequest();
     });
 
-    it('should ....', function() {
+    it('should load backend data correctly', function() {
         //spec body
         $httpBackend.flush();
         expect(contact).toBeDefined();
-
+        expect(contact.firstName).toEqual('jorge');
+        expect(contact.lastName).toEqual('perez');
     });
 });

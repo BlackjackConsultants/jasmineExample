@@ -234,9 +234,9 @@
     <Content Include="app\components\version\version_test.js" />
     <Content Include="app\index-async.html" />
     <Content Include="app\index.html" />
-    <Content Include="app\view2\view2.html" />
-    <Content Include="app\view2\view2.js" />
-    <Content Include="app\view2\view2_test.js" />
+    <Content Include="app\viewSpyOn\view2.html" />
+    <Content Include="app\viewSpyOn\view2.js" />
+    <Content Include="app\viewSpyOn\view2_test.js" />
     <Content Include="app\viewBackendExampleView\BackendExampleView.html" />
     <Content Include="app\viewBackendExampleView\BackendExampleView.js" />
     <Content Include="app\viewBackendExampleView\BackendExampleView_test.js" />
