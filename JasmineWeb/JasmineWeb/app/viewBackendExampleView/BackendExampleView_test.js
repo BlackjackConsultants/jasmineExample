@@ -2,6 +2,7 @@
 
 describe('myApp.BackendExampleView module', function () {
     var $httpBackend;
+    var $scope;
     var contact;
     var $rootScope;
     var BackendExampleViewCtrl;
