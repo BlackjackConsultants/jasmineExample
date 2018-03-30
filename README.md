@@ -5,7 +5,7 @@ This is an angularjs application that runs each example on an angularjs view.  T
 
 ## First: Install pre-requisites:
 Install node.js and karma to run tests.  You only do this once.  
-1. Install **node.js** as cited [here](http://blog.teamtreehouse.com/install-node-js-npm-windows)
+1. Install **node.js** as cited **[here](http://blog.teamtreehouse.com/install-node-js-npm-windows)**
 2. Install **karma**
 ```
 npm install -g karma
@@ -14,6 +14,8 @@ npm install -g karma
 ```
 npm install -g @angular/cli
 ```
+4. install **[git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)**
+
 
 ## Second: Once pre-requisites are installed then:
 1. clone this project by opening command prompt.
