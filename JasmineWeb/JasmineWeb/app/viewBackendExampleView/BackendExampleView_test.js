@@ -1,9 +1,9 @@
 'use strict';
 
 describe('myApp.BackendExampleView module', function () {
-    var $scope;
     var $httpBackend;
     var contact;
+    var $rootScope;
     var BackendExampleViewCtrl;
 
     contact = {
@@ -13,12 +13,20 @@ describe('myApp.BackendExampleView module', function () {
 
     beforeEach(module('myApp.BackendExampleView'));
 
-    beforeEach(angular.mock.inject(function ($controller, $injector) {
-        BackendExampleViewCtrl = $controller('BackendExampleViewCtrl', {
-            $scope: $scope
-        });
+    beforeEach(angular.mock.inject(function ($controller, $injector, $http) {
+        $rootScope = $injector.get('$rootScope');
         $httpBackend = $injector.get('$httpBackend');
         $httpBackend.when('GET', 'Contact/REST/contact/-1').respond(contact);
+        $http.get('Contact/REST/contact/-1').then(function (response) {
+            //authToken = response.headers('A-Token');
+            $scope.user = response.data;
+        }).catch(function () {
+            $scope.status = 'Failed...';
+        });
+        BackendExampleViewCtrl = $controller('BackendExampleViewCtrl', {
+            $scope: $injector.get('$rootScope'),
+            $http: $http
+        });
     }));
 
     afterEach(function() {
