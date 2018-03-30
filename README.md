@@ -5,15 +5,17 @@ This is an angularjs application that runs each example on an angularjs view.  T
 
 ## Install pre-requisites:
 this project uses node.js and karma to run tests.
-1. install node.js
+1. install node.js as cited [here](http://blog.teamtreehouse.com/install-node-js-npm-windows)
+2. install karma
+...
+npm install -g karma
+...
 2. install angular-cli
 
 ## Once pre-requisites are installed then:
 
 1. clone this project by opening command prompt.
  
-
-
 ## Cool links
  
  [unit testing controllers](https://nathanleclaire.com/blog/2013/12/13/how-to-unit-test-controllers-in-angularjs-without-setting-your-hair-on-fire/)
