@@ -8,7 +8,7 @@ Install node.js and karma to run tests.  You only do this once.
 1. install node.js as cited [here](http://blog.teamtreehouse.com/install-node-js-npm-windows)
 2. install karma
 ```
-    npm install -g karma
+npm install -g karma
 ```
 3. install angular-cli
 ```
