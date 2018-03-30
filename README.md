@@ -10,7 +10,10 @@ Install node.js and karma to run tests.  You only do this once.
 ```
     npm install -g karma
 ```
-2. install angular-cli
+3. install angular-cli
+```
+npm install -g @angular/cli
+```
 
 ## Second: Once pre-requisites are installed then:
 
