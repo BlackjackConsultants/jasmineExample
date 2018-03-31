@@ -33,4 +33,4 @@ git clone https://github.com/jorgeperez99/jasmineExample.git
 cd <directory name>
 ```
 ## Third: Run the tests
-To run the tests, simply do a `npm start`
+To run the tests, simply do a `npm test` in the command prompt.  A browser window will open with a **debug** button.  Click on the button and another window will open.  Open the developer window and check the console window.  you will see all tests that ran.
