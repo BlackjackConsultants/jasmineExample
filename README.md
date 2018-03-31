@@ -1,4 +1,4 @@
-# Running jasmine tests on angularjs application.
+# jasmineExample angularjs application.
 This is an angularjs application that runs each example on an angularjs view.  The application is encapsulated in a visual studio solution for ease of use.  The project uses jasmine, ngMock to create the unit tests and then to run them it uses nodejs and karma. 
 
 ## To run it on your machine do the following:
@@ -32,6 +32,5 @@ git clone https://github.com/jorgeperez99/jasmineExample.git
 ```
 cd <directory name>
 ```
-## Additional links
-* [unit testing controllers](https://nathanleclaire.com/blog/2013/12/13/how-to-unit-test-controllers-in-angularjs-without-setting-your-hair-on-fire/)
-* [using $http service](http://www.bradoncode.com/blog/2015/06/26/unit-testing-http-ngmock-fundamentals/)
+## Third: Run the tests
+To run the tests, simply do a `npm start`
