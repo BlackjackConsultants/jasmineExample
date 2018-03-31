@@ -9,6 +9,10 @@ angular.module('myApp.spyOnView', ['ngRoute'])
   });
 }])
 
-.controller('spyOnViewCtrl', [function () {
+.controller('spyOnViewCtrl', ['$scope', function ($scope) {
     console.debug('spyOnViewCtrl code executed.');
+    $scope.calculateTotalWithTip = function(price) {
+        return price * 1.15;
+    }
+    //$scope.calculateTotalWithTip($scope.mealPrice);
 }]);
