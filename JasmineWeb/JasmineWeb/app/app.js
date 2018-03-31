@@ -4,7 +4,7 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.BackendExampleView',
-  'myApp.view2',
+  'myApp.spyOnView',
   'myApp.version'
 ])
 
