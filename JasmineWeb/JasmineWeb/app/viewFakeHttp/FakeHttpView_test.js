@@ -1,24 +1,24 @@
 'use strict';
 
-describe('myApp.BackendExampleView module', function () {
+describe('myApp.FakeHttpView module', function () {
     var $httpBackend;
     var $scope;
     var contact;
     var $rootScope;
-    var BackendExampleViewCtrl;
+    var FakeHttpViewCtrl;
 
     contact = {
         firstName: 'jorge',
         lastName: 'perez'
     }
 
-    beforeEach(module('myApp.BackendExampleView'));
+    beforeEach(module('myApp.FakeHttpView'));
 
     beforeEach(angular.mock.inject(function ($controller, $injector, $http) {
         $rootScope = $injector.get('$rootScope');
         $httpBackend = $injector.get('$httpBackend');
         $httpBackend.when('GET', 'Contact/REST/contact/-1').respond(contact);
-        BackendExampleViewCtrl = $controller('BackendExampleViewCtrl', {
+        FakeHttpViewCtrl = $controller('FakeHttpViewCtrl', {
             $scope: $injector.get('$rootScope'),
             $http: $http
         });

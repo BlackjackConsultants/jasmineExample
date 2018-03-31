@@ -5,20 +5,20 @@
 describe('my app', function() {
 
 
-  it('should automatically redirect to /BackendExampleView when location hash/fragment is empty', function() {
+  it('should automatically redirect to /FakeHttpView when location hash/fragment is empty', function() {
     browser.get('index.html');
-    expect(browser.getLocationAbsUrl()).toMatch("/BackendExampleView");
+    expect(browser.getLocationAbsUrl()).toMatch("/FakeHttpView");
   });
 
 
-  describe('BackendExampleView', function() {
+  describe('FakeHttpView', function() {
 
     beforeEach(function() {
-      browser.get('index.html#!/BackendExampleView');
+      browser.get('index.html#!/FakeHttpView');
     });
 
 
-    it('should render BackendExampleView when user navigates to /BackendExampleView', function() {
+    it('should render FakeHttpView when user navigates to /FakeHttpView', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
         toMatch(/partial for view 1/);
     });

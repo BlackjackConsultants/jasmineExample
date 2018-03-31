@@ -3,7 +3,7 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
   'ngRoute',
-  'myApp.BackendExampleView',
+  'myApp.FakeHttpView',
   'myApp.spyOnView',
   'myApp.version'
 ])
@@ -11,5 +11,5 @@ angular.module('myApp', [
 .config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
-  $routeProvider.otherwise({redirectTo: '/BackendExampleView'});
+  $routeProvider.otherwise({redirectTo: '/FakeHttpView'});
 }]);

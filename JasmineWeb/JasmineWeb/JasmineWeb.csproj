@@ -237,9 +237,9 @@
     <Content Include="app\viewSpyOn\spyOnView.html" />
     <Content Include="app\viewSpyOn\spyOnView.js" />
     <Content Include="app\viewSpyOn\spyOnView_test.js" />
-    <Content Include="app\viewBackendExampleView\BackendExampleView.html" />
-    <Content Include="app\viewBackendExampleView\BackendExampleView.js" />
-    <Content Include="app\viewBackendExampleView\BackendExampleView_test.js" />
+    <Content Include="app\viewFakeHttp\FakeHttpView.html" />
+    <Content Include="app\viewFakeHttp\FakeHttpView.js" />
+    <Content Include="app\viewFakeHttp\FakeHttpView_test.js" />
     <Content Include="e2e-tests\protractor.conf.js" />
     <Content Include="e2e-tests\scenarios.js" />
     <Content Include="karma.conf.js" />
