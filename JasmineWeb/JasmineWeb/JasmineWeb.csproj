@@ -94,6 +94,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\viewAsynchTests\spyOnView.html" />
+    <Content Include="app\viewAsynchTests\spyOnView.js" />
+    <Content Include="app\viewAsynchTests\spyOnView_test.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -234,9 +237,9 @@
     <Content Include="app\components\version\version_test.js" />
     <Content Include="app\index-async.html" />
     <Content Include="app\index.html" />
-    <Content Include="app\viewSpyOn\spyOnView.html" />
-    <Content Include="app\viewSpyOn\spyOnView.js" />
-    <Content Include="app\viewSpyOn\spyOnView_test.js" />
+    <Content Include="app\viewSpyOn\asynchTestView.html" />
+    <Content Include="app\viewSpyOn\asynchTestView.js" />
+    <Content Include="app\viewSpyOn\asynchTestView_test.js" />
     <Content Include="app\viewFakeHttp\FakeHttpView.html" />
     <Content Include="app\viewFakeHttp\FakeHttpView.js" />
     <Content Include="app\viewFakeHttp\FakeHttpView_test.js" />

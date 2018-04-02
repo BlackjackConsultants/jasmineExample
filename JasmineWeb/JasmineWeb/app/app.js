@@ -5,6 +5,7 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.FakeHttpView',
   'myApp.spyOnView',
+  'myApp.asynchTestView',
   'myApp.version'
 ])
 
