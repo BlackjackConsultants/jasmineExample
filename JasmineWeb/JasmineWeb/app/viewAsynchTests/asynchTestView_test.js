@@ -7,6 +7,7 @@ describe('myApp.asynchTestView module', function () {
     var contact;
     var $rootScope;
     var ctrl;
+    var value;
 
     beforeEach(module('myApp.asynchTestView'));
 
@@ -16,9 +17,14 @@ describe('myApp.asynchTestView module', function () {
         $scope = $rootScope.$new();
         $scope.mealPrice = 100;
         // controller is created.
-        ctrl = $controller('asynchTestViewCtrl', {
-            $scope: $scope
-        });
+        setTimeout(function (done) {
+            ctrl = $controller('asynchTestViewCtrl', {
+                $scope: $scope
+            });
+            value = 0;
+            done();
+        }, 1);
+
         // set spy before method called
         spyOn($scope, 'calculateTotalWithTip'); //.and.CallThrough;
 
@@ -26,11 +32,13 @@ describe('myApp.asynchTestView module', function () {
         ////$scope.calculateTotalWithTip($scope.mealPrice);
     }));
 
-    it('should execute controller code using async timeouts', inject(function($controller) {
+    it('should execute controller code using async timeouts', (function(done) {
         //spec body
+        value++;
         expect(ctrl).toBeDefined();
         expect($scope.calculateTotalWithTip).toHaveBeenCalled();
         expect($scope.calculateTotalWithTip).toHaveBeenCalledWith(100);
+        done();
     }));
 
 });
