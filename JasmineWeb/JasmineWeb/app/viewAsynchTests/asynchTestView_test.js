@@ -1,44 +1,20 @@
 'use strict';
 
 describe('myApp.asynchTestView module', function () {
-    var $httpBackend;
-    var $rootScope;
-    var $scope;
-    var contact;
-    var $rootScope;
-    var ctrl;
     var value;
 
     beforeEach(module('myApp.asynchTestView'));
 
-    beforeEach(angular.mock.inject(function ($controller, $injector) {
-        // init varaibles.
-        $rootScope = $injector.get('$rootScope');
-        $scope = $rootScope.$new();
-        $scope.mealPrice = 100;
-        // controller is created.
-        setTimeout(function (done) {
-            ctrl = $controller('asynchTestViewCtrl', {
-                $scope: $scope
-            });
+    beforeEach(function(done) {
+        setTimeout(function() {
             value = 0;
             done();
         }, 1);
+    });
 
-        // set spy before method called
-        spyOn($scope, 'calculateTotalWithTip'); //.and.CallThrough;
-
-        ////// method is called.
-        ////$scope.calculateTotalWithTip($scope.mealPrice);
-    }));
-
-    it('should execute controller code using async timeouts', (function(done) {
-        //spec body
+    it("should support async execution of test preparation and expectations", function(done) {
         value++;
-        expect(ctrl).toBeDefined();
-        expect($scope.calculateTotalWithTip).toHaveBeenCalled();
-        expect($scope.calculateTotalWithTip).toHaveBeenCalledWith(100);
+        expect(value).toBeGreaterThan(0);
         done();
-    }));
-
+    });
 });
